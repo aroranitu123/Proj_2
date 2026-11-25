@@ -1,10 +1,3 @@
--- ============================================================================
--- Problem 2: The Marketing Warehouse
--- File: ml/generate_ml_dataset.sql
--- Description: Builds the production ML-ready dataset for predicting lead-to-order
---              conversion within 14 days, with strict anti-leakage guarantees,
---              temporal train/test split, and class balance reporting.
--- ============================================================================
 
 DROP TABLE IF EXISTS ml_lead_conversion_dataset CASCADE;
 
@@ -93,12 +86,7 @@ JOIN lead_conversions lc ON lc.lead_id = l.lead_id;
 -- Add Primary Key to ML table
 ALTER TABLE ml_lead_conversion_dataset ADD PRIMARY KEY (lead_id);
 
--- ============================================================================
--- CLASS BALANCE AND SPLIT SUMMARY REPORT
--- ============================================================================
-SELECT '==================================================' AS divider;
-SELECT '        ML DATASET CLASS BALANCE & SPLIT REPORT    ' AS title;
-SELECT '==================================================' AS divider;
+
 
 SELECT 
     dataset_split,
