@@ -1,12 +1,5 @@
 
-# Problem 2: The Marketing Warehouse
 
-**Horrazon AI – Round 2 Technical Assessment**  
-**Role:** Data Engineering Intern  
-**Candidate:** Nitya Arora  
-**Project:** Marketing Data Warehouse  
-**Database:** PostgreSQL  
-**Architecture:** 3NF Relational Database
 
 ---
 
